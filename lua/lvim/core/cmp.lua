@@ -276,6 +276,7 @@ M.config = function()
       { name = "treesitter" },
       { name = "crates" },
       { name = "tmux" },
+      { name = "codeium" },
     },
     mapping = cmp_mapping.preset.insert {
       ["<C-k>"] = cmp_mapping(cmp_mapping.select_prev_item(), { "i", "c" }),

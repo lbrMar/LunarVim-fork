@@ -358,7 +358,23 @@ local core_plugins = {
   },
 
   -- rose-pine colorscheme
-  { "rose-pine/neovim", name = "rose-pine" },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+  },
+
+  -- Codeium
+  {
+    "Exafunction/codeium.nvim",
+    dependencies = {
+        "nvim-lua/plenary.nvim",
+        "hrsh7th/nvim-cmp",
+    },
+    config = function()
+        require("codeium").setup({
+        })
+    end
+  },
 }
 
 local default_snapshot_path = join_paths(get_lvim_base_dir(), "snapshots", "default.json")
