@@ -356,6 +356,9 @@ local core_plugins = {
     enabled = lvim.builtin.bigfile.active,
     event = { "FileReadPre", "BufReadPre", "User FileOpened" },
   },
+
+  -- rose-pine colorscheme
+  { "rose-pine/neovim", name = "rose-pine" },
 }
 
 local default_snapshot_path = join_paths(get_lvim_base_dir(), "snapshots", "default.json")
